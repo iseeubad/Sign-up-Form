@@ -1,0 +1,24 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-container {
+    width: 50%;
+    background:url(images/jordan-duca-aOqEXM_zI_4-unsplash.jpg);
+    padding: 20px;
+    border-radius: 5px;
+    height: 100vh;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
