@@ -19,7 +19,7 @@ body {
 }
 .left-container {
     position: relative;
-    width: 50%;
+    width: 30%;
     background:url(images/jordan-duca-aOqEXM_zI_4-unsplash.jpg);
     padding: 20px;
     border-top-right-radius: 5px;
@@ -33,10 +33,8 @@ body {
     transform: translate(-50%, -50%); /* Center overlay */    
     width: 100%;
     margin-top: 10rem;
-    margin-right: 0 !important;
-    margin-left: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     background: rgb(2 0 36 / 50%);
@@ -52,3 +50,100 @@ img{
     width: 100px;
     height: auto;
 }
+.credit{
+    font-size: 10px;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    top: 95%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.credit-links{
+    color: white;
+}
+.credit-links:hover{
+    font-weight:800;
+    text-shadow: 2px black;
+    transition: 0.3s;
+}
+.right-container{
+    width: 70%;
+    height: 100vh;
+    background-color: #E1D9D1 ;
+    position: relative;
+    position : relative;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.zone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-top: 1rem;
+}
+.form{
+    background-color: white;
+    width: 100%;
+    padding: 2rem;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    box-shadow: 10px 5px 5px #A9A9A9;
+}
+label, input{
+    width: 60%;
+}
+label{
+    display: block;
+    font-weight: 600;
+    font-size: 12px;
+}
+input{
+    padding: 6px 10px;
+}
+.topmsg{
+    font-weight: 800;
+}
+.paragraph{
+    position: absolute;
+    width: 80%;
+    margin-top: 1rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    top:8%;
+}
+h3{
+    position: absolute;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    top: 25%;
+    margin-left: 2rem;
+}
+.submit{
+    position: absolute;
+    top: 73%;
+    left: 3%;
+    width: 20%;
+    padding: 15px 5px;
+    background-color:   #006400;
+    color: white;
+    border-radius: 5px;
+    font-weight: 900;
+    border: none;
+}
+.submit:hover{
+    background-color: #008000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
