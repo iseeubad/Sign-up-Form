@@ -19,34 +19,39 @@
         <h3>You <span style="font-style: italic;">Know</span> you want to</h3>
         <section class="form">
             <div class="topmsg">Let's do this!</div>
-            <form method="post" >
+            <form method="post" id="form">
                 <div class="zone">
                     <label for="firstname">FIRST NAME</label>
-                    <input type="text" id="firstname">
+                    <input type="text" id="firstname" required>
                 </div>
                 <div class="zone">
                     <label for="lastname">LAST NAME</label>
-                    <input type="text" id="lastname">
+                    <input type="text" id="lastname"  required>
                 </div>
                 <div class="zone">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" required>
                 </div>
                 <div class="zone"> 
                     <label for="number">PHONE NUMBER</label>
-                    <input type="text" id="number">
+                    <input type="text" id="number" required>
                 </div>
                 <div class="zone">
                     <label for="pass">PASSWORD</label>
-                    <input type="password" id="pass">
+                    <input type="password" id="pass" minlength="8" required>
                 </div>
                 <div class="zone"> 
                     <label for="conf-pass">CONFIRM PASSWORD</label>
-                    <input type="password" id="conf-pass">
+                    <input type="password" id="conf-pass" minlength="8" required>
                 </div>
+                <br><br>
+                <span class="error" id="error-message"></span>
+                <button type="submit" class="submit">Create Account</button>
             </form>
         </section>
-        <button type="submit" class="submit">Create Account</button>
+        
+        <div class="login-form">Already have an account? <a class="login">log in</a></div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>

@@ -19,7 +19,7 @@ body {
 }
 .left-container {
     position: relative;
-    width: 30%;
+    width: 35%;
     background:url(images/jordan-duca-aOqEXM_zI_4-unsplash.jpg);
     padding: 20px;
     border-top-right-radius: 5px;
@@ -69,7 +69,7 @@ img{
     transition: 0.3s;
 }
 .right-container{
-    width: 70%;
+    width:65%;
     height: 100vh;
     background-color: #E1D9D1 ;
     position: relative;
@@ -97,7 +97,7 @@ form{
     margin: 0;
     position: absolute;
     top: 30%;
-    box-shadow: 10px 5px 5px #A9A9A9;
+    box-shadow: 5px 5px 10px #A9A9A9;
 }
 label, input{
     width: 60%;
@@ -107,9 +107,25 @@ label{
     font-weight: 600;
     font-size: 12px;
 }
-input{
-    padding: 6px 10px;
-}
+input {
+    border: 1px solid #E5E7EB;
+    padding: 6px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+
+  input:invalid {
+    border-color: red;
+  }
+
+  input:focus {
+    border-color: blue;
+    box-shadow: 0 0 8px rgba(0, 0, 255, 0.2);
+  }
+
+  
 .topmsg{
     font-weight: 800;
 }
@@ -131,11 +147,11 @@ h3{
 }
 .submit{
     position: absolute;
-    top: 73%;
+    top: 110%;
     left: 3%;
     width: 20%;
     padding: 15px 5px;
-    background-color:   #006400;
+    background-color:   #596D48;
     color: white;
     border-radius: 5px;
     font-weight: 900;
@@ -146,4 +162,24 @@ h3{
     cursor: pointer;
     transition: 0.3s;
 }
+.login-form{
+    position: absolute;
+    top: 82%;
+    left: 3%;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    
+}
 
+.login{
+    text-decoration: underline;
+    color:    #596D48;
+    font-size: 900;
+    cursor: pointer;
+}
+.error {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+  }
